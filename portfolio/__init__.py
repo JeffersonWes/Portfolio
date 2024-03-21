@@ -25,7 +25,7 @@ projects=[
         "thumb" : "img/dspace-library.png",
         "hero" : "img/dspace-library-hero.png",
         "categories": ["postgresql","java"],
-        "slug": "Dspace",
+        "slug": "dspace",
         "prod":"https://udemy.com",
     }
 ]
