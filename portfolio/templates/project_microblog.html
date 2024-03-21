@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main class="main main--project">
+        <div>
+            <img
+                class="hero"
+                src="{{ url_for('static', filename=project['hero']) }}"
+                alt="A girl and a boy sitting side by side microblogging in their devices."
+            />
+
+            <article class="project">
+                <article class="project__content">
+                    <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                    <p>
+                        Hi, I'm Jefferson! I love solving problems and I'm a tech fanatic.
+                        I am a Full Stack Developer and a freelancer. You can find me on GitHub as <a class="about__link" href="https://github.com/JeffersonWes">JeffersonWes</a>
+                        It's been over 6 years since I started coding.I love learning new things and I'm a consistent worker. I am currently pursuing M.Tech Cse(Integrated Course) degree
+                        in Sri Krishna ColLege Of Engineering and Technology.
+                    </p>
+                    <p>
+                        Introducing our microblog app crafted with Flask and MongoDB, where sharing your thoughts becomes effortless. Engage with a vibrant community, post updates, and discover intriguing content with ease. With its streamlined design and seamless integration, staying connected has never been simpler. Experience the power of Flask and MongoDB as they come together to redefine microblogging.
+                    </p>
+                </article>
+
+                <section>
+                    <article class="project__meta-group">
+                        <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                        <ul class="technology-list">
+                            <li class="technology-list__item">Python</li>
+                            <li class="technology-list__item">HTML</li>
+                            <li class="technology-list__item">CSS</li>
+                        </ul>
+                    </article>
+
+                    <a class="cta" href="{{ project['prod'] }}">
+                        <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                        View in production
+                    </a>
+                </section>
+            </article>
+        </div>
+    </main>
+{% endblock %}
